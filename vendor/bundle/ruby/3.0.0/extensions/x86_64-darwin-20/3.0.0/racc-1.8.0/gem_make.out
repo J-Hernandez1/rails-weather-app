@@ -1,0 +1,15 @@
+current directory: /Users/jake/rails-weather-app/vendor/bundle/ruby/3.0.0/gems/racc-1.8.0/ext/racc/cparse
+/Users/jake/.rbenv/versions/3.0.0/bin/ruby -I /Users/jake/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20240725-68596-4yu00v.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jake/rails-weather-app/vendor/bundle/ruby/3.0.0/gems/racc-1.8.0/ext/racc/cparse
+make "DESTDIR=" clean
+
+current directory: /Users/jake/rails-weather-app/vendor/bundle/ruby/3.0.0/gems/racc-1.8.0/ext/racc/cparse
+make "DESTDIR="
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/jake/rails-weather-app/vendor/bundle/ruby/3.0.0/gems/racc-1.8.0/ext/racc/cparse
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20240725-68596-zx37ry/racc
