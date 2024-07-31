@@ -2,6 +2,7 @@
 
 class CurrentWeatherService
     BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
+    API_KEY = ENV["OPENWEATHER_API_KEY"]
 
     def initialize(latitude:, longitude:, units: "metric")
         @latitude = latitude
@@ -22,7 +23,7 @@ class CurrentWeatherService
         return @uri if defined?(@uri)
 
         @uri = URI(BASE_URL)
-        params = { lat: latitude, lon: longitude, units: units, appid: "992d118c3cca8e7cb6c071de74cee07d" } 
+        params = { lat: latitude, lon: longitude, units: units, appid: API_KEY } 
         @uri.query = URI.encode_www_form(params)
         @uri
     end
